@@ -8,8 +8,8 @@ on:
 
 #  Only one of these jobs runs at a time per branch, this cancels the other running jobs
 concurrency:
-  # group: ${{ github.ref }}
-  group: "main"
+  group: ${{ github.ref }}
+  # group: "main"
   cancel-in-progress: false
 
 jobs:
