@@ -1,0 +1,22 @@
+name: Test
+
+on:
+  push:
+    branches:
+  workflow_dispatch:
+  
+
+#  Only one of these jobs runs at a time per branch, this cancels the other running jobs
+concurrency:
+  # group: ${{ github.ref }}
+  group: "main"
+  cancel-in-progress: true
+
+jobs:
+  test:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Testing
+      run: | 
+        echo "test in progress"
+  
