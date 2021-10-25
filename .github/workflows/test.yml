@@ -14,9 +14,9 @@ concurrency:
 
 jobs:
   test:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Testing
-      run: | 
-        echo "test in progress"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing
+        run: | 
+          echo "test in progress"
   
